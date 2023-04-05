@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body, footer{
+	height: 100vh;
+	display: flex;
+  justify-content: center;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	height: 50vh;
+	width: 50vh;
+	border: 1px solid rgb(201, 197, 197);
+	border-radius: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.imgperfil {
+	height: 50px;
+	width: 50px;
+}
+
+.foot {
+	/* background-color: #f4ecec; */
+  box-shadow:  5px 5px 86px #cdc6c6,
+              -5px -5px 86px #ffffff;
+  position:fixed;
+  width: 98vw;
+  height: 10vw;
+	display: flex;
+	position: relative;
+  bottom: -70px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 130px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+}
+
+.foot img {
+	width: 120px;
+  height: 120px;
+  border-radius: 99%;
+}
+.foot p {
+  z-index: 2;
+  color:rgb(125, 208, 241);
+  font-family: Roboto;
+  padding: 50px;
+}
+.foot:hover p{
+  color: #8c63ec;
+}
+
+.Navbar {
+	/* background-color: #f4ecec; */
+  box-shadow:  20px 20px 50px #f1eaea,
+              -10px -10px 10px #faf6f6;
+  position:fixed;
+  width: 98vw;
+  height: 5vw;
+	display: flex;
+	position: relative;
+  bottom: 30px;
+  margin-top: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 130px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+}
+
+.Navbar img {
+	width: 50px;
+  height: 50px;
+  border-radius: 99%;
+}
+.Navbar h5 {
+  color:rgb(125, 208, 241);
+  font-family: Roboto;
+  padding: 50px;
+  font-weight: 600;
+  font-size: medium;
+}
+a:hover{
+  color: #8c63ec;
+  cursor: pointer;
+}
+
+.mul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 500px;
+  padding-left: 200px;
+
+}
+
+.mli a {
+  width: 160px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #8c63ec; */
+  padding-left: 115px;
+  width: 260px;
+}
+
+.logout{
+  cursor: pointer;
+}
+
+.containerhome {
+  background-color:#8c63ec;
+}
