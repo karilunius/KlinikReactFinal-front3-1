@@ -115,8 +115,25 @@ a:hover{
   width: 260px;
 }
 
+
 .logout{
   cursor: pointer;
+}
+
+.logout:hover{
+  color: #30076e;
+  border-radius: 25px;
+  border: #8c63ec 1px solid;
+}
+
+.darkthemeicon{
+    cursor: pointer;
+}
+
+.darkthemeicon:hover{
+  color: #30076e;
+  border-radius: 25px;
+  border: #8c63ec 1px solid;
 }
 
 .containerhome {

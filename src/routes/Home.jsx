@@ -3,8 +3,7 @@ import "../styles/App.css";
 import axios from "axios";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 export const endpoint = "https://jsonplaceholder.typicode.com/users";
-import Footer from "../components/gen/Footer";
-import Navbar from "../components/gen/Navbar";
+
 
 
 const Home = () => {
@@ -23,18 +22,16 @@ const Home = () => {
 	}, []);
 
     return (
-		<>
-			<Navbar />
-			<div className="containerhome">
-				{valuesd?.map((item) => (
-					<div key={item.id}>
-						<AccountCircleIcon className="imgperfil" alt="foto" />
-						<p>{item.name}</p>
-					</div>
-				))}
-			</div>
-			<Footer/>
-		</>
+			<>
+				<div className="containerhome">
+					{valuesd?.map((item) => (
+						<div key={item.id}>
+							<AccountCircleIcon className="imgperfil" alt="foto" />
+							<p>{item.name}</p>
+						</div>
+					))}
+				</div>
+			</>
 		);
 };
 
