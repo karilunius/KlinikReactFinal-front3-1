@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, TextField} from "@mui/material";
 import { LoginContext } from "../components/utils/context/loginContext.jsx";
-import "../styles/dark-theme.css";
+import "../styles/light-theme.css";
 
 
 

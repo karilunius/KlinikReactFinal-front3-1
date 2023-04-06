@@ -222,20 +222,98 @@ a:active {
 	left: 750px;
 }
 
+
+/* sin completar diseño */
 /* PAGINA DE CONTACTOS*/
 
 .boxcontactos {
-	background-color: #1383df;
+/* 	background-color: #1383df; */
 	height: 240px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	border-radius: 25px;
 }
 
 .boxcont1 {
-	background-color: #8c63ec;
+	background-color: white;
+	box-shadow: 10px 10px 10px #f1eaea, -10px -10px 10px #faf6f6;
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	border-radius: 25px;
 }
 
-/* sin completar diseño */
+.boxcont1 p, h2 {
+    position: relative;
+	top: 73px;
+}
+
+#form{
+   display: flex;
+   flex-direction: row;
+   background-color: #b3d5fd;
+   box-shadow: 15px 15px 15px #f1eaea, -15px -15px 15px #faf6f6;
+   width: 770px;
+   height: 200px;
+   justify-content: space-evenly;
+   align-items: center;
+   border-radius: 25px;
+}
+
+.formplaceholders{
+   height: 70px;
+   width: 270px;
+   border-radius: 20px;
+   border: none;
+   text-align:left;
+   /* margin: 25px; */
+
+}
+
+.formplaceholders input{
+   position: relative;
+   top: -15px;
+   height: 30px;
+   width: 250px;
+   margin: 5px;
+   border: #8fc4f0 solid 1px;
+   border-radius: 20px;
+   padding: 12px;
+   color: #1383df;
+}
+
+
+.btncontform{
+  background-color: #47b0e0;
+  height: 35px;
+  width: 70px;
+  border-radius: 20px;
+  border: none;
+  color: #f7f9fa;
+  position: relative;
+  left: 90px;
+
+}
+.btncontform:hover{
+  background-color: #0e5b92;
+}
+
+/* .formsmsbox{
+   background-color: #a6dcf5;
+   text-align: center;
+   width: 370px;
+   height: 200px;
+   border-radius: 25px;
+} */
+.formsmsbox{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  width: 200px;
+  position: relative;
+  top: -15px;
+  color: #0e5b92;
+}

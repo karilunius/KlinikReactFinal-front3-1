@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import '../src/styles/dark-theme.css'
+import '../src/styles/light-theme.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

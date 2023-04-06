@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "../styles/dark-theme.css";
 import axios from "axios";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 export const endpoint = "https://jsonplaceholder.typicode.com/users";
 import { IconButton } from "@mui/material";
 import StarOutlineSharpIcon from "@mui/icons-material/StarOutlineSharp";
+import "../styles/light-theme.css";
 
 const Home = () => {
 	const [values, setValues] = useState(null);

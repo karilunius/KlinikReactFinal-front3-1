@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import LogoutIcon from "@mui/icons-material/Logout";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { Link } from "react-router-dom";
-import "../../styles/dark-theme.css";
+import "../../styles/light-theme.css";
 
 const Navbar = () => {
 
