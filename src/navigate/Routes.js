@@ -14,19 +14,19 @@ export const routes = [
     },
     {
         id:2,
-        path: "/dentista",
+        path: "/users/:id",
         Component: Dentista,
     },
     {
         id:3,
-        path: "/destacados",
+        path: "/destacados/",
         Component: Destacados,
     },
-    {
+    /* {
         id:4,
-        path: "/contactos",
+        path: "/contactos/",
         Component: Contactos,
-    }
+    } */
 ];
 
 export { Login };

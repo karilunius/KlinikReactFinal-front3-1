@@ -1,14 +1,59 @@
-import React from "react";
+import React,{ useState, useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+/* export const endpoint1 = "https://jsonplaceholder.typicode.com/users/:id"; */
+import { endpoint } from "./Home";
+import axios from "axios";
+import "../styles/light-theme.css";
+import Card from "../components/gen/Card";
 
 const Dentista = () => {
-	// Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
+
+	const { id } = useParams();
+
+
+	const [values, setValues] = useState(null);
+
+	useEffect(() => {
+			axios.get(`${endpoint}/${id}`)
+			.then(({ data }) => {
+				setValues(data);
+			})
+			.catch((error) => {
+				console.error(error);
+			});
+	}, []);
+
+
+   /*  useEffect(() => {
+			const fetchData = () => {
+				try {
+					const response = axios.get(`${endpoint}/${id}`);
+					setValues([response.data]); // Convertir los datos en un arreglo
+				} catch (error) {
+					console.log(error);
+				}
+			};
+
+			fetchData();
+		}, []); */
 
 	return (
-		<>
-			<h1>Datos Dentista</h1>
-			{/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
-			{/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
-		</>
+		<div>
+			<h1>Datos de Dentista</h1>
+				<div className="boxdedatoscard">
+					<p>{values?.id}</p>
+					<p>{values?.name}</p>
+					<p>{values?.phone}</p>
+					<p>{values?.email}</p>
+					<p>{values?.website}</p>
+				</div>
+				<Link to="/home">Regresar</Link>
+
+			{/* {values?.map((item) => (
+				<Card key={item?.id} {...item} values={values} />
+			))} */}
+
+		</div>
 	);
 }
 

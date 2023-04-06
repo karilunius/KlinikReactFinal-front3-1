@@ -36,9 +36,9 @@ const Navbar = () => {
 					<Link style={{ color: "rgb(125, 208, 241)" }} to="/dentista">
 						Dentistas
 					</Link>
-					<Link style={{ color: "rgb(125, 208, 241)" }} to="/contactos">
+					{/* <Link style={{ color: "rgb(125, 208, 241)" }} to="/contactos">
 						Contactos
-					</Link>
+					</Link> */}
 					<Link style={{ color: "rgb(125, 208, 241)" }} to="/destacados">
 						Favoritos
 					</Link>

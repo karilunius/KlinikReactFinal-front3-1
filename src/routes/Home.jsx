@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
@@ -8,6 +9,8 @@ import StarOutlineSharpIcon from "@mui/icons-material/StarOutlineSharp";
 import "../styles/light-theme.css";
 
 const Home = () => {
+
+
 	const [values, setValues] = useState(null);
 
 	useEffect(() => {
@@ -47,16 +50,18 @@ const Home = () => {
 						</IconButton>
 					</div>
 					<div className="iconarrow">
-						<IconButton>
-							<ArrowCircleRightIcon
-								sx={{
-									fontSize: "40px",
-									cursor: "pointer",
-									color: "rgb(125, 208, 241)",
-								}}
-								alt="foto"
-							/>
-						</IconButton>
+						<Link to={`/users/${item.id}`}>
+							<IconButton>
+								<ArrowCircleRightIcon
+									sx={{
+										fontSize: "40px",
+										cursor: "pointer",
+										color: "rgb(125, 208, 241)",
+									}}
+									alt="foto"
+								/>
+							</IconButton>
+						</Link>
 					</div>
 				</div>
 			))}
