@@ -2,9 +2,8 @@ import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, TextField} from "@mui/material";
 import { LoginContext } from "../components/utils/context/loginContext.jsx";
-import "../styles/App.css";
-import { BackgroundLightLogin } from "../styled/login-styled.js";
-/* import { Styloplaceholder } from "../styled/Styloplaceholder.js"; */
+import "../styles/dark-theme.css";
+
 
 
 const Login = () => {
@@ -27,7 +26,7 @@ const Login = () => {
 
 
 	return (
-		<Box
+			<Box 
 			className="login"
 			component="form"
 			/* sx={{
@@ -37,9 +36,6 @@ const Login = () => {
 		>
 			<h2>LOGIN</h2>
 			<TextField
-				/* className={stylesuimaterial.miPlaceholder} */
-				id="textnickname"
-				className="boxes"
 				name="nickname"
 				size="small"
 				type="text"
@@ -60,8 +56,6 @@ const Login = () => {
 						outline: "none",
 					},
 				}} */
-				id="textemail"
-				className="boxes"
 				name="email"
 				size="small"
 				type="email"
@@ -73,7 +67,6 @@ const Login = () => {
 			/>
 			<Button
 				sx={{ marginTop: "10px", backgroundColor: "rgb(125, 208, 241)" }}
-				className="btnformLogin"
 				type="submit"
 				size="small"
 				variant="contained"
@@ -81,7 +74,7 @@ const Login = () => {
 			>
 				Ingresar
 			</Button>
-		</Box>
+	        </Box>
 	);
 };
 

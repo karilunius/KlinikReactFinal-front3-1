@@ -1,0 +1,7 @@
+.theme-light {
+	@import url("light-theme.css");
+}
+
+.theme-dark {
+	@import url("dark-theme.css");
+}

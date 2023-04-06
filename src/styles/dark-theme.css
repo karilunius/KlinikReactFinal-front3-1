@@ -1,0 +1,258 @@
+/* GLOBAL */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+footer {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(33, 140, 247, 0.4);
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+/* HOJA DE LOGIN */
+
+
+.login {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	height: 50vh;
+	width: 50vh;
+	border-radius: 10px;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	box-shadow: 14px 14px 68px #a6dcf5, -14px -14px 68px #ffff;
+	position: relative;
+	top: 150px;
+}
+
+
+.login h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 200;
+	color: rgb(33, 140, 247, 0.4);
+	margin-bottom: 20px;
+	z-index: 10;
+}
+
+
+/* COMPONENTE FOOTER */
+
+.foot {
+	background-color: white;
+	box-shadow: 5px 5px 36px #187d8f, -5px -5px 36px #ffffff;
+	position: fixed;
+	width: 98vw;
+	height: 10vw;
+	display: flex;
+	position: relative;
+	bottom: -70px;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 130px;
+	font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+	font-weight: 300;
+}
+
+.foot img {
+	width: 120px;
+	height: 120px;
+	border-radius: 99%;
+}
+.foot p {
+	z-index: 2;
+	color: rgb(125, 208, 241);
+	font-family: Roboto;
+	padding: 50px;
+}
+.foot:hover p {
+	color: #8c63ec;
+}
+
+
+/* COMPONENTE NAVBAR */
+
+.Navbar {
+	background-color: rgb(28, 70, 117);
+	box-shadow: 22px 23px 25px #b2c1c4, -42px -43px 45px #bbc9cc;
+	position: fixed;
+	width: 98vw;
+	height: 5vw;
+	display: flex;
+	position: relative;
+	bottom: 30px;
+	gap: 10px;
+	margin-top: 50px;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 130px;
+	font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+	color: #d2e4f3;
+}
+
+.Navbar img {
+	width: 50px;
+	height: 50px;
+	border-radius: 99%;
+}
+
+
+.Navbar h5 {
+	color: rgb(247, 248, 248);
+	font-family: Roboto;
+	padding: 50px;
+	font-weight: 600;
+	font-size: medium;
+}
+
+.Navbar a:hover {
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.mul {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	width: 500px;
+	padding-left: 200px;
+}
+
+
+.icons {
+	display: flex;
+	justify-content: space-between;
+	/* background-color: #8c63ec; son de navbar*/
+	padding-left: 115px;
+	width: 260px;
+}
+
+.logout {
+	cursor: pointer;
+	background-color: white;
+	border-radius: 2px;
+}
+
+.logout:hover {
+	color: #e7ecf0;
+	border-radius: 25px;
+	border: #d1e4f5 1px solid;
+}
+
+.darkthemeicon {
+	cursor: pointer;
+	border: white solid 1px;
+	border-radius: 50px;
+}
+
+.darkthemeicon:hover {
+	color: #d2e4f3;
+	border-radius: 25px;
+	border: #d1e4f5 1px solid;
+}
+
+
+
+/* PAGINA HOME */
+
+.containerhome {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 50px;
+	font-family: Roboto;
+	width: 1300px;
+	position: relative;
+	left: 20px;
+	border-radius: 30px;
+}
+
+.containerhome h1 {
+	padding-bottom: 50px;
+	color:  rgb(28, 70, 117);
+}
+
+.containerdoc {
+	background-color: rgb(50, 158, 201);
+	box-shadow: 10px 10px 10px #f1eaea, -10px -10px 10px #faf6f6;
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+	height: 70px;
+	border-radius: 50px;
+	align-items: center;
+}
+
+.containerdoc:hover {
+	background-color: rgb(160, 180, 236, 0.5);
+}
+
+.containerdoc p {
+	text-align: justify;
+	width: 200px;
+	color: rgb(40, 76, 90);
+	font-size: 20px;
+	position: relative;
+	left: 150px;
+}
+
+.iconprofile {
+	position: relative;
+	left: 85px;
+}
+.iconstar {
+	/* background-color: #1383df; */
+	position: relative;
+	left: 750px;
+}
+.iconarrow {
+	/*   background-color: #8c63ec; */
+	position: relative;
+	left: 750px;
+}
+
+/* PAGINA DE CONTACTOS*/
+
+.boxcontactos {
+	background-color: #1383df;
+	height: 240px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.boxcont1 {
+	background-color: #8c63ec;
+}
+
+/* sin completar diseño */

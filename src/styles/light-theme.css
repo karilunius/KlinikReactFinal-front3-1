@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -19,13 +21,14 @@ a:active {
 	text-decoration: none;
 }
 
+/* HOJA DE LOGIN */
+
 .login {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	height: 50vh;
 	width: 50vh;
-	border: 1px solid rgb(201, 197, 197);
 	border-radius: 10px;
 	align-items: center;
 	justify-content: center;
@@ -34,11 +37,7 @@ a:active {
 .login {
 	position: relative;
 	top: 150px;
-	/* border: #43266e dashed 0.5px; */
-	/* background-color: #faf6f6;
-	box-shadow: 70px 70px 30px #f1eaea, 70px 70px 30px #faf6f6;*/
 	border: none;
-	border-radius: 27px;
 	box-shadow: 14px 14px 68px #a6dcf5, -14px -14px 68px #ffffff;
 }
 
@@ -49,6 +48,9 @@ a:active {
 	margin-bottom: 20px;
 	z-index: 10;
 }
+
+
+/* COMPONENTE FOOTER */
 
 .foot {
 	/* background-color: #f4ecec; */
@@ -82,6 +84,9 @@ a:active {
 	color: #8c63ec;
 }
 
+
+/* COMPONENTE NAVBAR */
+
 .Navbar {
 	/* background-color: #f4ecec; */
 	box-shadow: 10px 10px 10px #f5efef, -10px -10px 10px #ffffff;
@@ -107,9 +112,6 @@ a:active {
 	border-radius: 99%;
 }
 
-.navbar img:hover {
-   background-color: red;
-}
 
 .Navbar h5 {
 	color: rgb(125, 208, 241);
@@ -118,7 +120,8 @@ a:active {
 	font-weight: 600;
 	font-size: medium;
 }
-a:hover {
+
+.Navbar a:hover {
 	color: #1383df;
 	cursor: pointer;
 	text-decoration: none;
@@ -133,10 +136,6 @@ a:hover {
 	padding-left: 200px;
 }
 
-.mli a {
-	width: 160px;
-	color: rgb(125, 208, 241);
-}
 
 .icons {
 	display: flex;
@@ -168,8 +167,7 @@ a:hover {
 
 
 
-/* CSS HOME */
-
+/* PAGINA HOME */
 
 .containerhome {
 	/* background-color:#8c63ec; */
@@ -209,47 +207,35 @@ a:hover {
 	left: 150px;
 }
 
-.iconprofile{
-    position: relative;
-    left: 85px;
+.iconprofile {
+	position: relative;
+	left: 85px;
 }
-.iconstar{
-    /* background-color: #1383df; */
+.iconstar {
+	/* background-color: #1383df; */
 	position: relative;
 	left: 750px;
-	
 }
-.iconarrow{
- /*   background-color: #8c63ec; */
-   position: relative;
-   left: 750px;
-}
-
-/* // */
-
-.boxes {
-	border-color: #ffffff;
-}
-.MuiOutlinedInput-root:focus {
-	outline: none;
-}
-.boxes:hover {
-	background-color: aliceblue;
-	border-color: rgb(51, 136, 185);
+.iconarrow {
+	/*   background-color: #8c63ec; */
+	position: relative;
+	left: 750px;
 }
 
+/* PAGINA DE CONTACTOS*/
 
-
-.boxcontactos{
-   background-color: #1383df;
-   height: 240px;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   align-items:center;
-   justify-content: space-around;
+.boxcontactos {
+	background-color: #1383df;
+	height: 240px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 }
 
-.boxcont1{
-	background-color:#8c63ec;
+.boxcont1 {
+	background-color: #8c63ec;
 }
+
+/* sin completar diseño */

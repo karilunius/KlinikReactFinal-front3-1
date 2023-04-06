@@ -6,7 +6,6 @@ import LoginContextProvider from "../src/components/utils/context/loginContext.j
 import Footer from "./components/gen/Footer.jsx";
 import Navbar from "./components/gen/Navbar.jsx";
 
-
 const App = () => {
 	return (
 		<LoginContextProvider>
@@ -20,9 +19,9 @@ const App = () => {
 								path={path}
 								element={
 									<>
-										<Navbar/>
+										<Navbar />
 										<Component />
-										<Footer/>
+										<Footer />
 									</>
 								}
 							/>
@@ -31,7 +30,7 @@ const App = () => {
 					<Route path="/" element={<Navigate to="/login" />} />
 				</Routes>
 			</BrowserRouter>
-			</LoginContextProvider>
+		</LoginContextProvider>
 	);
 }
 
