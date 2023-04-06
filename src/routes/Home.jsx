@@ -5,47 +5,63 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 export const endpoint = "https://jsonplaceholder.typicode.com/users";
 import { IconButton } from "@mui/material";
-
+import StarOutlineSharpIcon from "@mui/icons-material/StarOutlineSharp";
 
 const Home = () => {
-
-    const [values, setValues] = useState(null);
-
+	const [values, setValues] = useState(null);
 
 	useEffect(() => {
-		axios.get(endpoint)
+		axios
+			.get(endpoint)
 			.then(({ data }) => {
-                setValues(data);
+				setValues(data);
 			})
 			.catch((error) => {
 				console.error(error);
 			});
 	}, []);
 
-    return (
-			<div className="containerhome">
-				<h1>Listado de Dentistas</h1>
-
-				{values?.map((item) => (
-					<>
-						<div key={item.id} className="containerdoc">
-							<AccountCircleIcon
-								sx={{ fontSize: "40px" }}
-								className="imgperfil"
+	return (
+		<div className="containerhome">
+			<h1>Listado de Dentistas</h1>
+			{values?.map((item) => (
+				<div key={item.id} className="containerdoc">
+					<div className="iconprofile">
+						<AccountCircleIcon
+							sx={{ fontSize: "40px", color: "rgb(125, 208, 241)" }}
+							className="imgperfil"
+							alt="foto"
+						/>
+					</div>
+					<p>{item.name}</p>
+					<div className="iconstar">
+						<IconButton>
+							<StarOutlineSharpIcon
+								sx={{
+									fontSize: "40px",
+									cursor: "pointer",
+									color: "rgb(125, 208, 241)",
+								}}
+								alt="like"
+							/>
+						</IconButton>
+					</div>
+					<div className="iconarrow">
+						<IconButton>
+							<ArrowCircleRightIcon
+								sx={{
+									fontSize: "40px",
+									cursor: "pointer",
+									color: "rgb(125, 208, 241)",
+								}}
 								alt="foto"
 							/>
-							<p>{item.name}</p>
-							<IconButton to={ "/dentista:`${item.id}`"}>
-								<ArrowCircleRightIcon
-									sx={{ fontSize: "40px", cursor: "pointer" }}
-									alt="foto"
-								/>
-							</IconButton>
-						</div>
-					</>
-				))}
-			</div>
-		);
+						</IconButton>
+					</div>
+				</div>
+			))}
+		</div>
+	);
 };
 
 export default Home;

@@ -5,7 +5,7 @@ const Form = () => {
 
 	return (
 		<div>
-			<form>form</form>
+			<p>form</p> 
 		</div>
 	);
 };

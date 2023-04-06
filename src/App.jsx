@@ -6,6 +6,7 @@ import LoginContextProvider from "../src/components/utils/context/loginContext.j
 import Footer from "./components/gen/Footer.jsx";
 import Navbar from "./components/gen/Navbar.jsx";
 
+
 const App = () => {
 	return (
 		<LoginContextProvider>
@@ -30,7 +31,7 @@ const App = () => {
 					<Route path="/" element={<Navigate to="/login" />} />
 				</Routes>
 			</BrowserRouter>
-		</LoginContextProvider>
+			</LoginContextProvider>
 	);
 }
 
