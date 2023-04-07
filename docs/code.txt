@@ -142,3 +142,15 @@ const { state, dispatch } = useContext(ContextGlobal);
 
 			fetchData();
 		}, []); */
+
+
+						/* sx={{
+					border: "1px solid white",
+					"&:hover": {
+						borderColor: "dodgerblue",
+					},
+					borderRadius: "20px",
+					"& .MuiOutlinedInput-root.Mui-focused": {
+						outline: "none",
+					},
+				}} */

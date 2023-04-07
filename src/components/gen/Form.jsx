@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/light-theme.css";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import DangerousIcon from "@mui/icons-material/Dangerous";
 
 const Form = () => {
 			const [nombre, setNombre] = useState("");
@@ -35,6 +37,7 @@ const Form = () => {
 			if (validacionA === true && validacionB === true) {
 				setValidar(false);
 				setMensaje(true);
+				
 			} else {
 				setValidar(true);
 				setMensaje(false);
@@ -63,8 +66,24 @@ const Form = () => {
 				</button>
 			</div>
 			<div className="formsmsbox">
-				{validar && <p>Por favor, verifique sus datos. Los datos no fueron enviados.</p>}
-				{mensaje && <p name={nombre} email={email}></p>}
+				{validar && (
+					<div className="formsmsbox">
+						<p>Por favor, verifique sus datos. Los datos no fueron enviados.</p>
+						<span>
+							<DangerousIcon sx={{color: "red"}} />
+						</span>
+					</div>
+				)}
+				{mensaje && (
+					<div className="formsmsbox">
+						<p name={nombre} email={email}>
+							Gracias por tu envío. Te contactaremos a tu correo
+						</p>
+						<span>
+							<CheckCircleIcon sx={{color: "green"}} />
+						</span>
+					</div>
+				)}
 			</div>
 		</form>
 	);

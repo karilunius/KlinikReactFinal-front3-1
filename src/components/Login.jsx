@@ -9,7 +9,7 @@ import "../styles/light-theme.css";
 const Login = () => {
 
 
-	const [values, setValues] = useState({ nickname: "", email: "" });
+	const [values, setValues] = useState({ email: "", password: "" });
 
 	const { handleLogin } = useContext(LoginContext);
 	
@@ -25,7 +25,7 @@ const Login = () => {
 
 
 	return (
-			<Box 
+		<Box
 			className="login"
 			component="form"
 			/* sx={{
@@ -34,27 +34,8 @@ const Login = () => {
 			onSubmit={handleSubmit}
 		>
 			<h2>LOGIN</h2>
+
 			<TextField
-				name="nickname"
-				size="small"
-				type="text"
-				label="nombre"
-				placeholder="Ingresa tu nombre"
-				required={true}
-				value={values.nickname}
-				onChange={(e) => setValues({ ...values, nickname: e.target.value })}
-			/>
-			<TextField
-				/* sx={{
-					border: "1px solid white",
-					"&:hover": {
-						borderColor: "dodgerblue",
-					},
-					borderRadius: "20px",
-					"& .MuiOutlinedInput-root.Mui-focused": {
-						outline: "none",
-					},
-				}} */
 				name="email"
 				size="small"
 				type="email"
@@ -63,6 +44,16 @@ const Login = () => {
 				required={true}
 				value={values.email}
 				onChange={(e) => setValues({ ...values, email: e.target.value })}
+			/>
+			<TextField
+				name="password"
+				size="small"
+				type="password"
+				label= "password"
+				placeholder="Ingresa tu password"
+				required={true}
+				value={values.password}
+				onChange={(e) => setValues({ ...values, password: e.target.value })}
 			/>
 			<Button
 				sx={{ marginTop: "10px", backgroundColor: "rgb(125, 208, 241)" }}
@@ -73,7 +64,7 @@ const Login = () => {
 			>
 				Ingresar
 			</Button>
-	        </Box>
+		</Box>
 	);
 };
 
