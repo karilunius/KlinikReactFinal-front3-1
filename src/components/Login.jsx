@@ -41,6 +41,7 @@ const Login = () => {
 				type="email"
 				label="correo"
 				placeholder="Ingresa tu correo"
+				autoComplete="username"
 				required={true}
 				value={values.email}
 				onChange={(e) => setValues({ ...values, email: e.target.value })}
@@ -49,8 +50,9 @@ const Login = () => {
 				name="password"
 				size="small"
 				type="password"
-				label= "password"
+				label="password"
 				placeholder="Ingresa tu password"
+				autoComplete="current-password"
 				required={true}
 				value={values.password}
 				onChange={(e) => setValues({ ...values, password: e.target.value })}

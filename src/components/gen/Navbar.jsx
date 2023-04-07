@@ -7,7 +7,6 @@ import "../../styles/light-theme.css";
 
 const Navbar = () => {
 
-	
 	return (
 		<>
 			<div className="Navbar">
@@ -19,9 +18,6 @@ const Navbar = () => {
 					<Link style={{ color: "rgb(125, 208, 241)" }} to="/home">
 						Home
 					</Link>
-					{/* <Link style={{ color: "rgb(125, 208, 241)" }} to="/users/:id">
-						Dentistas
-					</Link> */}
 					<Link style={{ color: "rgb(125, 208, 241)" }} to="/contactos">
 						Contactos
 					</Link>
