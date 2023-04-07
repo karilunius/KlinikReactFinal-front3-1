@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Card = ({ name, phone,id, email, website }) => {
 	
@@ -12,10 +13,10 @@ const Card = ({ name, phone,id, email, website }) => {
 		<div className="card">
 			<h2>Desde la card</h2>
 			<div className="boxdedatoscard">
-				<p>{item?.name}</p>
+			{/* 	<p>{item?.name}</p>
 				<p>{item?.phone}</p>
 				<p>{item?.email}</p>
-				<p>{item?.website}</p>
+				<p>{item?.website}</p> */}
 			</div>
 			<Link to="/home">Regresar</Link>
 

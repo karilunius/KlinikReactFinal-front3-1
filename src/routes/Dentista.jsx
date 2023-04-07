@@ -24,18 +24,6 @@ const Dentista = () => {
 	}, []);
 
 
-   /*  useEffect(() => {
-			const fetchData = () => {
-				try {
-					const response = axios.get(`${endpoint}/${id}`);
-					setValues([response.data]); // Convertir los datos en un arreglo
-				} catch (error) {
-					console.log(error);
-				}
-			};
-
-			fetchData();
-		}, []); */
 
 	return (
 		<div>

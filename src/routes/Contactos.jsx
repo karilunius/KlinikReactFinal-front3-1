@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Form from "../components/gen/Form.jsx";
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
+
 
 const Contactos = () => {
 

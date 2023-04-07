@@ -22,11 +22,11 @@ export const routes = [
         path: "/destacados/",
         Component: Destacados,
     },
-    /* {
+    {
         id:4,
         path: "/contactos/",
         Component: Contactos,
-    } */
+    }
 ];
 
 export { Login };

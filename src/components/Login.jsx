@@ -8,7 +8,6 @@ import "../styles/light-theme.css";
 
 const Login = () => {
 
-	/* const stylesuimaterial = Styloplaceholder(); */
 
 	const [values, setValues] = useState({ nickname: "", email: "" });
 

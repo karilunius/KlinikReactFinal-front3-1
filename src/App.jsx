@@ -6,31 +6,32 @@ import LoginContextProvider from "../src/components/utils/context/loginContext.j
 import Footer from "./components/gen/Footer.jsx";
 import Navbar from "./components/gen/Navbar.jsx";
 
+
 const App = () => {
 	return (
-		<LoginContextProvider>
-			<BrowserRouter>
-				<Routes>
-					<Route path="/login" element={<Login />} />
-					<Route element={<ProtectedRoute />}>
-						{routes.map(({ id, path, Component }) => (
-							<Route
-								key={id}
-								path={path}
-								element={
-									<>
-										<Navbar />
-										<Component />
-										<Footer />
-									</>
-								}
-							/>
-						))}
-					</Route>
-					<Route path="/" element={<Navigate to="/login" />} />
-				</Routes>
-			</BrowserRouter>
-		</LoginContextProvider>
+			<LoginContextProvider>
+				<BrowserRouter>
+					<Routes>
+						<Route path="/login" element={<Login />} />
+						<Route element={<ProtectedRoute />}>
+							{routes.map(({ id, path, Component }) => (
+								<Route
+									key={id}
+									path={path}
+									element={
+										<>
+											<Navbar />
+											<Component />
+											<Footer />
+										</>
+									}
+								/>
+							))}
+						</Route>
+						<Route path="/" element={<Navigate to="/login"/>} />
+					</Routes>
+				</BrowserRouter>
+			</LoginContextProvider>
 	);
 }
 
