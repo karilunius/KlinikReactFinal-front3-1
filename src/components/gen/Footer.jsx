@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/light-theme.css";
+import "../../styles/theme.css";
 
 const Footer = () => {
 	return (

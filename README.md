@@ -2,7 +2,55 @@
 
 Examen Final de Frontend III
 
-## Indice
+## Estructura
+
+- proyecto
+  - docs
+  - node_modules
+  - public
+    - logo-n-b.jpg
+    - logoklinik.jpg
+    - profiledoctor.jpg
+  - src
+    - componentes
+      -gen
+        - Card.jsx
+        - Footer.jsx
+        - Form.jsx
+        - Navbar.jsx
+      -utils
+        -context
+          -globalcontext.jsx
+          -logincontext.jsx
+          -themecontext.jsx
+        -Protected
+          -ProtectedRouter.jsx
+      -Login.jsx
+    - navigate
+      - Routes.js
+    - routes
+      - Contactos.jsx
+      - Dentista.jsx
+      - Destacados.jsx
+      - Home.jsx
+    - styles
+      - dark-theme.css
+      - light-theme.css
+      - theme.css
+    - App.jsx
+    - main.jsx
+    - .gitignore
+    - package-lock.json
+    - package.json
+    - README.md
+    - vite.config.js
+  - package-lock.json
+
+
+
+
+
+
 
 - [Requisitos](#requisitos)
   - [Condiciones mínimas de aprobación](#condiciones-mínimas-de-aprobación)

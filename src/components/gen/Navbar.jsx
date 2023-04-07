@@ -2,14 +2,17 @@ import React, { useState, useEffect, useContext } from "react";
 import LogoutIcon from "@mui/icons-material/Logout";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { Link } from "react-router-dom";
-import "../../styles/light-theme.css";
-
+import { ThemeContext } from "../utils/context/themecontext";
+import "../../styles/theme.css";
 
 const Navbar = () => {
 
+
+	const { currentTheme, toggleTheme } = useContext(ThemeContext);
+	
 	return (
 		<>
-			<div className="Navbar">
+			<div className={`Navbar ${currentTheme ? "light-theme" : "dark-theme"}`}>
 				<img src="./logoklinik.jpg" alt="company-logo" />
 
 				<img src="./logo-n-b.jpg" alt="company-logo" />
@@ -26,7 +29,11 @@ const Navbar = () => {
 					</Link>
 				</nav>
 				<div className="icons">
-					<DarkModeIcon className="darkthemeicon" alt="darkmodeicon" />
+					<DarkModeIcon
+						className="darkthemeicon"
+						alt="darkmodeicon"
+						onClick={toggleTheme}
+					/>
 					<Link to="/">
 						<LogoutIcon className="logout" alt="logouticon" />
 					</Link>

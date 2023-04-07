@@ -1,9 +1,8 @@
 import React,{ useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-/* export const endpoint1 = "https://jsonplaceholder.typicode.com/users/:id"; */
 import { endpoint } from "./Home";
 import axios from "axios";
-import "../styles/light-theme.css";
+import "../styles/theme.css";
 import Card from "../components/gen/Card";
 
 const Dentista = () => {

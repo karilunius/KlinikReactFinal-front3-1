@@ -6,7 +6,7 @@ import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 export const endpoint = "https://jsonplaceholder.typicode.com/users";
 import { IconButton } from "@mui/material";
 import StarOutlineSharpIcon from "@mui/icons-material/StarOutlineSharp";
-import "../styles/light-theme.css";
+import "../styles/theme.css";
 
 const Home = () => {
 

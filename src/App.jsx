@@ -5,11 +5,16 @@ import { ProtectedRoute } from './components/utils/Protected/ProtectedRoute.jsx'
 import LoginContextProvider from "../src/components/utils/context/loginContext.jsx";
 import Footer from "./components/gen/Footer.jsx";
 import Navbar from "./components/gen/Navbar.jsx";
-
+import ThemeContextProvider from './components/utils/context/themecontext.jsx';
+import "./styles/theme.css";
 
 const App = () => {
+
+    
+
 	return (
-			<LoginContextProvider>
+		<LoginContextProvider>
+			<ThemeContextProvider>
 				<BrowserRouter>
 					<Routes>
 						<Route path="/login" element={<Login />} />
@@ -31,6 +36,7 @@ const App = () => {
 						<Route path="/" element={<Navigate to="/login"/>} />
 					</Routes>
 				</BrowserRouter>
+				</ThemeContextProvider>
 			</LoginContextProvider>
 	);
 }

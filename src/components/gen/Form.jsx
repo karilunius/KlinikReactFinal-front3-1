@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../styles/light-theme.css";
+import "../../styles/theme.css";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import DangerousIcon from "@mui/icons-material/Dangerous";
 

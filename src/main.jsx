@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import '../src/styles/light-theme.css'
+import App from './App.jsx'
+import '../src/styles/theme.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
